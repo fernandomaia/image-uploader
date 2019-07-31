@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <%= image_tag url_for(@image_file.image) %>
+</p>
+
+<p>
   <strong>Owner:</strong>
   <%= @image_file.owner %>
 </p>
