@@ -13,17 +13,17 @@
 
   <div class="field">
     <%= form.label :owner %>
-    <%= form.text_field :owner %>
+    <%= form.text_field :owner, required: true %>
   </div>
 
   <div class="field">
     <%= form.label :description %>
-    <%= form.text_area :description %>
+    <%= form.text_area :description, required: true %>
   </div>
 
   <div class="field">
     <%= form.label :image %>
-    <%= form.file_field :image %>
+    <%= form.file_field :image, required: true %>
   </div>
 
   <div class="actions">
