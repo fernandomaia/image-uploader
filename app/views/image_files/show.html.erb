@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Owner:</strong>
+  <%= @image_file.owner %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @image_file.description %>
+</p>
+
+<%= link_to 'Edit', edit_image_file_path(@image_file) %> |
+<%= link_to 'Back', image_files_path %>
