@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= form.label :image %>
-    <%= form.file_field :image, required: true %>
+    <%= form.file_field :image, required: true, accept: 'image/png,image/gif,image/jpeg' %>
   </div>
 
   <div class="actions">
