@@ -9,12 +9,17 @@ RSpec.describe ImageFile, type: :model do
   end
 
   it 'is not valid without owner' do
-    image_file = ImageFile.new(owner: nil)
+    image_file = ImageFile.new(owner: nil, description: 'Description')
     expect(image_file).to_not be_valid
   end
 
   it 'is not valid without description' do
-    image_file = ImageFile.new(description: nil)
+    image_file = ImageFile.new(owner: 'Owner', description: nil)
+    expect(image_file).to_not be_valid
+  end
+
+  it 'is not valid without image file' do
+    image_file = ImageFile.new(owner: 'Owner', description: 'Description')
     expect(image_file).to_not be_valid
   end
 end
