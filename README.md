@@ -1,24 +1,19 @@
-# README
+# Image Uploader using ActiveStorage
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Check it online [here](https://activestorage-image-uploader.herokuapp.com).
 
-Things you may want to cover:
+## Running the project
 
-* Ruby version
+- Clone this repository to your local machine and then:
 
-* System dependencies
+```ruby
+rails s
+```
 
-* Configuration
+## Running the tests
 
-* Database creation
+To run the tests, just type the following on a terminal:
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```ruby
+rspec spec/models/image_file_spec.rb
+```
