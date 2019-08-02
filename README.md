@@ -2,13 +2,12 @@
 
 Check it online [here](https://activestorage-image-uploader.herokuapp.com).
 
-## Running the project
+## Running the project locally
 
-- Clone this repository to your local machine and then:
-
-```ruby
-rails s
-```
+- Clone this repository
+- `bundle install` to install dependencies
+- `rake db:migrate` to create and make all database migrations
+- `rails s` to start the server
 
 ## Running the tests
 
