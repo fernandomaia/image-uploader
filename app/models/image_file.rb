@@ -4,5 +4,4 @@ class ImageFile < ApplicationRecord
   validates :owner, presence: true
   validates :description, presence: true
   validates :image, presence: true, blob: { content_type: ['image/png', 'image/gif', 'image/jpeg'] }
-
 end
